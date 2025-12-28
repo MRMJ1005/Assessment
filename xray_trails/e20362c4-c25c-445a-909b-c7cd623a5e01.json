@@ -1,0 +1,204 @@
+{
+  "execution_id": "e20362c4-c25c-445a-909b-c7cd623a5e01",
+  "created_at": "2025-12-28T12:30:43.145844",
+  "metadata": {
+    "endpoint": "/related-products",
+    "keywords": "steel,bottle",
+    "price": 11.0
+  },
+  "steps": [
+    {
+      "step_id": "e5286949-09bb-4969-ad62-970c0b5cfa0b",
+      "step_name": "keyword_processing",
+      "timestamp": "2025-12-28T12:30:43.145863",
+      "inputs": {
+        "raw_keywords": "steel,bottle",
+        "price": 11.0
+      },
+      "candidates": [],
+      "filters_applied": [],
+      "outcomes": {
+        "generated_keywords": [
+          "steel",
+          "bottle"
+        ],
+        "keyword_count": 2
+      },
+      "reasoning": "Keywords extracted from comma-separated input string",
+      "metadata": {}
+    },
+    {
+      "step_id": "3c4c788e-dd4c-47cf-9a8c-51aee5b51cf6",
+      "step_name": "product_search",
+      "timestamp": "2025-12-28T12:30:43.145882",
+      "inputs": {
+        "keywords": [
+          "steel",
+          "bottle"
+        ]
+      },
+      "candidates": [
+        {
+          "id": "0ad5882b-81e4-4671-aa4c-49e9f05bc8fd",
+          "description": "Stainless steel insulated water bottle 32oz with vacuum seal, keeps drinks cold for 24 hours",
+          "price": 29.99,
+          "rating": 4.4,
+          "reviews": 1247
+        },
+        {
+          "id": "98ee34c6-0aa2-4a37-9f9f-09de92dc1f8e",
+          "description": "Premium insulated steel water bottle 26oz with wide mouth and leak proof lid",
+          "price": 34.99,
+          "rating": 4.6,
+          "reviews": 5632
+        },
+        {
+          "id": "33a58f32-eeb3-48eb-8331-52745217e8ba",
+          "description": "Insulated stainless steel sports bottle 40oz for hiking and outdoor activities",
+          "price": 39.99,
+          "rating": 4.7,
+          "reviews": 8124
+        },
+        {
+          "id": "20313f88-13fa-4cd4-9323-8f863cdb2e01",
+          "description": "Replacement lid compatible with insulated stainless steel water bottles",
+          "price": 6.99,
+          "rating": 4.3,
+          "reviews": 1543
+        },
+        {
+          "id": "50ac9cd3-4883-4ff4-812a-330f0201acc6",
+          "description": "Budget stainless steel water bottle 32oz, single wall, not insulated",
+          "price": 12.99,
+          "rating": 3.4,
+          "reviews": 97
+        },
+        {
+          "id": "530982ba-4eaa-4ddf-9f6f-ec901090863e",
+          "description": "Eco friendly bamboo insulated water bottle with steel interior",
+          "price": 42.99,
+          "rating": 4.6,
+          "reviews": 1456
+        },
+        {
+          "id": "6d9c659a-ce2f-4124-9593-956a7a6a189e",
+          "description": "Steel water bottle with powder coated matte finish",
+          "price": 19.99,
+          "rating": 4.0,
+          "reviews": 901
+        },
+        {
+          "id": "91936841-04fe-4dae-9020-fcfb26477109",
+          "description": "Minimalist stainless steel water bottle 500ml",
+          "price": 15.49,
+          "rating": 3.8,
+          "reviews": 367
+        },
+        {
+          "id": "51a2246a-ec75-41b8-a0b4-9cd47b947ead",
+          "description": "Stainless steel water bottle with classic screw cap",
+          "price": 17.99,
+          "rating": 3.9,
+          "reviews": 621
+        }
+      ],
+      "filters_applied": [],
+      "outcomes": {
+        "candidates_found": 9
+      },
+      "reasoning": "Database query returned 9 candidate products",
+      "metadata": {
+        "candidates_description": "Products matching search keywords"
+      }
+    },
+    {
+      "step_id": "73836484-7e80-4de7-b687-5afcd6bac973",
+      "step_name": "filter_and_select",
+      "timestamp": "2025-12-28T12:30:43.149326",
+      "inputs": {
+        "candidate_count": 9,
+        "reference_price": 11.0,
+        "filter_criteria": {
+          "min_rating": 3.5,
+          "min_reviews": 100,
+          "price_range": [
+            8.25,
+            22.0
+          ]
+        }
+      },
+      "candidates": [],
+      "filters_applied": [
+        {
+          "name": "combined_filters",
+          "config": {
+            "min_rating": 3.5,
+            "min_reviews": 100,
+            "price_range": [
+              8.25,
+              22.0
+            ]
+          },
+          "passed_count": 3,
+          "rejected_count": 6,
+          "passed": [
+            {
+              "id": "6d9c659a-ce2f-4124-9593-956a7a6a189e",
+              "price": 19.99,
+              "rating": 4.0
+            },
+            {
+              "id": "91936841-04fe-4dae-9020-fcfb26477109",
+              "price": 15.49,
+              "rating": 3.8
+            },
+            {
+              "id": "51a2246a-ec75-41b8-a0b4-9cd47b947ead",
+              "price": 17.99,
+              "rating": 3.9
+            }
+          ],
+          "rejected": [
+            {
+              "id": "0ad5882b-81e4-4671-aa4c-49e9f05bc8fd",
+              "description_product": "Stainless steel insulated water bottle 32oz with vacuum seal, keeps drinks cold for 24 hours",
+              "price": 29.99
+            },
+            {
+              "id": "98ee34c6-0aa2-4a37-9f9f-09de92dc1f8e",
+              "description_product": "Premium insulated steel water bottle 26oz with wide mouth and leak proof lid",
+              "price": 34.99
+            },
+            {
+              "id": "33a58f32-eeb3-48eb-8331-52745217e8ba",
+              "description_product": "Insulated stainless steel sports bottle 40oz for hiking and outdoor activities",
+              "price": 39.99
+            },
+            {
+              "id": "20313f88-13fa-4cd4-9323-8f863cdb2e01",
+              "description_product": "Replacement lid compatible with insulated stainless steel water bottles",
+              "price": 6.99
+            },
+            {
+              "id": "50ac9cd3-4883-4ff4-812a-330f0201acc6"
+            },
+            {
+              "id": "530982ba-4eaa-4ddf-9f6f-ec901090863e",
+              "description_product": "Eco friendly bamboo insulated water bottle with steel interior",
+              "price": 42.99
+            }
+          ],
+          "reasoning": "Applied rating, review count, and price range filters"
+        }
+      ],
+      "outcomes": {
+        "passed_count": 3,
+        "rejected_count": 6,
+        "final_products": 3
+      },
+      "reasoning": "Filtered 9 candidates down to 3 products",
+      "metadata": {}
+    }
+  ],
+  "total_steps": 3
+}

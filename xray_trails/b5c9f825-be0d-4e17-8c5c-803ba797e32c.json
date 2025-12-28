@@ -1,0 +1,452 @@
+{
+  "execution_id": "b5c9f825-be0d-4e17-8c5c-803ba797e32c",
+  "created_at": "2025-12-28T12:40:45.808579",
+  "metadata": {
+    "endpoint": "/related-products",
+    "keywords": "water,bottle",
+    "price": 15.0
+  },
+  "steps": [
+    {
+      "step_id": "d0011548-c56b-436f-833d-8ed9d60c882a",
+      "step_name": "keyword_processing",
+      "timestamp": "2025-12-28T12:40:45.808615",
+      "inputs": {
+        "raw_keywords": "water,bottle",
+        "price": 15.0
+      },
+      "candidates": [],
+      "filters_applied": [],
+      "outcomes": {
+        "generated_keywords": [
+          "water",
+          "bottle"
+        ],
+        "keyword_count": 2
+      },
+      "reasoning": "Keywords extracted from comma-separated input string",
+      "metadata": {}
+    },
+    {
+      "step_id": "defa8932-7a61-4ea4-95f1-be76519e3bbb",
+      "step_name": "product_search",
+      "timestamp": "2025-12-28T12:40:45.808632",
+      "inputs": {
+        "keywords": [
+          "water",
+          "bottle"
+        ]
+      },
+      "candidates": [
+        {
+          "id": "0ad5882b-81e4-4671-aa4c-49e9f05bc8fd",
+          "description": "Stainless steel insulated water bottle 32oz with vacuum seal, keeps drinks cold for 24 hours",
+          "price": 29.99,
+          "rating": 4.4,
+          "reviews": 1247
+        },
+        {
+          "id": "bd3d9be6-8c39-4021-bc4d-b39cf6f259bf",
+          "description": "Plastic reusable water bottle 1 liter, lightweight and BPA free",
+          "price": 9.99,
+          "rating": 3.6,
+          "reviews": 213
+        },
+        {
+          "id": "98ee34c6-0aa2-4a37-9f9f-09de92dc1f8e",
+          "description": "Premium insulated steel water bottle 26oz with wide mouth and leak proof lid",
+          "price": 34.99,
+          "rating": 4.6,
+          "reviews": 5632
+        },
+        {
+          "id": "ab0a097b-6941-41df-9c0b-6688bb040d01",
+          "description": "Water bottle cleaning brush set with long handle and sponge tip",
+          "price": 7.49,
+          "rating": 4.5,
+          "reviews": 3421
+        },
+        {
+          "id": "527690dc-7830-4332-bead-703ddbf8bcff",
+          "description": "Glass water bottle with silicone sleeve 20oz, eco friendly design",
+          "price": 18.99,
+          "rating": 4.1,
+          "reviews": 879
+        },
+        {
+          "id": "20313f88-13fa-4cd4-9323-8f863cdb2e01",
+          "description": "Replacement lid compatible with insulated stainless steel water bottles",
+          "price": 6.99,
+          "rating": 4.3,
+          "reviews": 1543
+        },
+        {
+          "id": "914b583f-865b-448e-9ffd-8ced628d6fa5",
+          "description": "Collapsible silicone water bottle 500ml, travel friendly and foldable",
+          "price": 14.99,
+          "rating": 3.9,
+          "reviews": 468
+        },
+        {
+          "id": "50ac9cd3-4883-4ff4-812a-330f0201acc6",
+          "description": "Budget stainless steel water bottle 32oz, single wall, not insulated",
+          "price": 12.99,
+          "rating": 3.4,
+          "reviews": 97
+        },
+        {
+          "id": "8fa7aa81-7283-4f92-8f3f-c30e630ad2d2",
+          "description": "High-end insulated water bottle 32oz with temperature display on lid",
+          "price": 49.99,
+          "rating": 4.8,
+          "reviews": 2319
+        },
+        {
+          "id": "f65a287e-720b-4a39-875a-2536d06a71ee",
+          "description": "Vacuum insulated travel water bottle 20oz with flip top lid",
+          "price": 24.99,
+          "rating": 4.2,
+          "reviews": 1043
+        },
+        {
+          "id": "ca12285d-059c-47e6-ad42-1124c0c6446a",
+          "description": "Kids water bottle with straw lid and cartoon design",
+          "price": 11.99,
+          "rating": 4.0,
+          "reviews": 658
+        },
+        {
+          "id": "45562ecc-d942-4ba9-a86c-7816df9558ed",
+          "description": "Copper coated insulated water bottle for long temperature retention",
+          "price": 44.99,
+          "rating": 4.6,
+          "reviews": 2917
+        },
+        {
+          "id": "d44abef3-782a-4b99-822f-d0969f35e2a6",
+          "description": "Lightweight aluminum water bottle for gym and fitness",
+          "price": 13.49,
+          "rating": 3.7,
+          "reviews": 412
+        },
+        {
+          "id": "303f15d2-01be-4c1f-934c-7a15928cb402",
+          "description": "Water bottle carrier bag with adjustable shoulder strap",
+          "price": 10.99,
+          "rating": 4.4,
+          "reviews": 1854
+        },
+        {
+          "id": "361f71dd-48b8-48f2-b089-64619e470ad5",
+          "description": "Slim metal water bottle 18oz suitable for car cup holders",
+          "price": 16.99,
+          "rating": 4.1,
+          "reviews": 732
+        },
+        {
+          "id": "2efb7972-a362-4248-9927-645e7eedbe83",
+          "description": "Reusable plastic water bottle with measurement markings",
+          "price": 8.99,
+          "rating": 3.5,
+          "reviews": 289
+        },
+        {
+          "id": "4ffd9fd2-0540-4ec6-a0d5-4b13490c4a64",
+          "description": "Insulated water bottle with sports cap and carry loop",
+          "price": 27.99,
+          "rating": 4.4,
+          "reviews": 2465
+        },
+        {
+          "id": "530982ba-4eaa-4ddf-9f6f-ec901090863e",
+          "description": "Eco friendly bamboo insulated water bottle with steel interior",
+          "price": 42.99,
+          "rating": 4.6,
+          "reviews": 1456
+        },
+        {
+          "id": "7599e177-5fa7-4d67-a206-26dff74b2a81",
+          "description": "Metal water bottle gift set with extra lids and brushes",
+          "price": 31.99,
+          "rating": 4.2,
+          "reviews": 1134
+        },
+        {
+          "id": "ca787298-eb7e-4d28-97e1-a4a3f85eab8f",
+          "description": "Thermal water bottle 750ml with scratch resistant coating",
+          "price": 28.49,
+          "rating": 4.3,
+          "reviews": 1623
+        },
+        {
+          "id": "edfc2146-d776-4400-a43b-a8625e2419f0",
+          "description": "Plastic squeeze water bottle for cycling and sports",
+          "price": 6.99,
+          "rating": 3.3,
+          "reviews": 188
+        },
+        {
+          "id": "376fd4bf-b885-4640-bfce-95b722679d4a",
+          "description": "Insulated water bottle with cup lid for office use",
+          "price": 35.99,
+          "rating": 4.5,
+          "reviews": 2741
+        },
+        {
+          "id": "6d9c659a-ce2f-4124-9593-956a7a6a189e",
+          "description": "Steel water bottle with powder coated matte finish",
+          "price": 19.99,
+          "rating": 4.0,
+          "reviews": 901
+        },
+        {
+          "id": "91936841-04fe-4dae-9020-fcfb26477109",
+          "description": "Minimalist stainless steel water bottle 500ml",
+          "price": 15.49,
+          "rating": 3.8,
+          "reviews": 367
+        },
+        {
+          "id": "27cb1569-d374-46ea-af86-243db45c9dac",
+          "description": "Smart water bottle with hydration reminder LED",
+          "price": 64.99,
+          "rating": 4.1,
+          "reviews": 948
+        },
+        {
+          "id": "51a2246a-ec75-41b8-a0b4-9cd47b947ead",
+          "description": "Stainless steel water bottle with classic screw cap",
+          "price": 17.99,
+          "rating": 3.9,
+          "reviews": 621
+        },
+        {
+          "id": "3794769c-350d-4b73-ac23-5b1a5088c2a9",
+          "description": "Sports water bottle with locking flip lid and straw",
+          "price": 21.99,
+          "rating": 4.3,
+          "reviews": 2139
+        },
+        {
+          "id": "e4d9194e-6cff-4900-bb78-2404c160ca08",
+          "description": "Ultra lightweight titanium water bottle for backpacking",
+          "price": 89.99,
+          "rating": 4.7,
+          "reviews": 734
+        },
+        {
+          "id": "ae6e8413-5cbc-4076-8427-0aff297dfd98",
+          "description": "Economy metal water bottle without insulation",
+          "price": 10.49,
+          "rating": 3.2,
+          "reviews": 154
+        },
+        {
+          "id": "c9e67fdd-4148-491b-8772-92cf81b76bf5",
+          "description": "Luxury insulated water bottle with leather sleeve",
+          "price": 79.99,
+          "rating": 4.8,
+          "reviews": 1289
+        }
+      ],
+      "filters_applied": [],
+      "outcomes": {
+        "candidates_found": 30
+      },
+      "reasoning": "Database query returned 30 candidate products",
+      "metadata": {
+        "candidates_description": "Products matching search keywords"
+      }
+    },
+    {
+      "step_id": "5a16049f-2aed-41c0-a170-56d5c23a5f52",
+      "step_name": "filter_and_select",
+      "timestamp": "2025-12-28T12:40:45.820302",
+      "inputs": {
+        "candidate_count": 30,
+        "reference_price": 15.0,
+        "filter_criteria": {
+          "min_rating": 3.5,
+          "min_reviews": 100,
+          "price_range": [
+            11.25,
+            30.0
+          ]
+        }
+      },
+      "candidates": [],
+      "filters_applied": [
+        {
+          "name": "combined_filters",
+          "config": {
+            "min_rating": 3.5,
+            "min_reviews": 100,
+            "price_range": [
+              11.25,
+              30.0
+            ]
+          },
+          "passed_count": 13,
+          "rejected_count": 17,
+          "passed": [
+            {
+              "id": "0ad5882b-81e4-4671-aa4c-49e9f05bc8fd",
+              "price": 29.99,
+              "rating": 4.4
+            },
+            {
+              "id": "527690dc-7830-4332-bead-703ddbf8bcff",
+              "price": 18.99,
+              "rating": 4.1
+            },
+            {
+              "id": "914b583f-865b-448e-9ffd-8ced628d6fa5",
+              "price": 14.99,
+              "rating": 3.9
+            },
+            {
+              "id": "f65a287e-720b-4a39-875a-2536d06a71ee",
+              "price": 24.99,
+              "rating": 4.2
+            },
+            {
+              "id": "ca12285d-059c-47e6-ad42-1124c0c6446a",
+              "price": 11.99,
+              "rating": 4.0
+            },
+            {
+              "id": "d44abef3-782a-4b99-822f-d0969f35e2a6",
+              "price": 13.49,
+              "rating": 3.7
+            },
+            {
+              "id": "361f71dd-48b8-48f2-b089-64619e470ad5",
+              "price": 16.99,
+              "rating": 4.1
+            },
+            {
+              "id": "4ffd9fd2-0540-4ec6-a0d5-4b13490c4a64",
+              "price": 27.99,
+              "rating": 4.4
+            },
+            {
+              "id": "ca787298-eb7e-4d28-97e1-a4a3f85eab8f",
+              "price": 28.49,
+              "rating": 4.3
+            },
+            {
+              "id": "6d9c659a-ce2f-4124-9593-956a7a6a189e",
+              "price": 19.99,
+              "rating": 4.0
+            },
+            {
+              "id": "91936841-04fe-4dae-9020-fcfb26477109",
+              "price": 15.49,
+              "rating": 3.8
+            },
+            {
+              "id": "51a2246a-ec75-41b8-a0b4-9cd47b947ead",
+              "price": 17.99,
+              "rating": 3.9
+            },
+            {
+              "id": "3794769c-350d-4b73-ac23-5b1a5088c2a9",
+              "price": 21.99,
+              "rating": 4.3
+            }
+          ],
+          "rejected": [
+            {
+              "id": "bd3d9be6-8c39-4021-bc4d-b39cf6f259bf",
+              "description_product": "Plastic reusable water bottle 1 liter, lightweight and BPA free",
+              "price": 9.99
+            },
+            {
+              "id": "98ee34c6-0aa2-4a37-9f9f-09de92dc1f8e",
+              "description_product": "Premium insulated steel water bottle 26oz with wide mouth and leak proof lid",
+              "price": 34.99
+            },
+            {
+              "id": "ab0a097b-6941-41df-9c0b-6688bb040d01",
+              "description_product": "Water bottle cleaning brush set with long handle and sponge tip",
+              "price": 7.49
+            },
+            {
+              "id": "20313f88-13fa-4cd4-9323-8f863cdb2e01",
+              "description_product": "Replacement lid compatible with insulated stainless steel water bottles",
+              "price": 6.99
+            },
+            {
+              "id": "50ac9cd3-4883-4ff4-812a-330f0201acc6"
+            },
+            {
+              "id": "8fa7aa81-7283-4f92-8f3f-c30e630ad2d2",
+              "description_product": "High-end insulated water bottle 32oz with temperature display on lid",
+              "price": 49.99
+            },
+            {
+              "id": "45562ecc-d942-4ba9-a86c-7816df9558ed",
+              "description_product": "Copper coated insulated water bottle for long temperature retention",
+              "price": 44.99
+            },
+            {
+              "id": "303f15d2-01be-4c1f-934c-7a15928cb402",
+              "description_product": "Water bottle carrier bag with adjustable shoulder strap",
+              "price": 10.99
+            },
+            {
+              "id": "2efb7972-a362-4248-9927-645e7eedbe83",
+              "description_product": "Reusable plastic water bottle with measurement markings",
+              "price": 8.99
+            },
+            {
+              "id": "530982ba-4eaa-4ddf-9f6f-ec901090863e",
+              "description_product": "Eco friendly bamboo insulated water bottle with steel interior",
+              "price": 42.99
+            },
+            {
+              "id": "7599e177-5fa7-4d67-a206-26dff74b2a81",
+              "description_product": "Metal water bottle gift set with extra lids and brushes",
+              "price": 31.99
+            },
+            {
+              "id": "edfc2146-d776-4400-a43b-a8625e2419f0"
+            },
+            {
+              "id": "376fd4bf-b885-4640-bfce-95b722679d4a",
+              "description_product": "Insulated water bottle with cup lid for office use",
+              "price": 35.99
+            },
+            {
+              "id": "27cb1569-d374-46ea-af86-243db45c9dac",
+              "description_product": "Smart water bottle with hydration reminder LED",
+              "price": 64.99
+            },
+            {
+              "id": "e4d9194e-6cff-4900-bb78-2404c160ca08",
+              "description_product": "Ultra lightweight titanium water bottle for backpacking",
+              "price": 89.99
+            },
+            {
+              "id": "ae6e8413-5cbc-4076-8427-0aff297dfd98"
+            },
+            {
+              "id": "c9e67fdd-4148-491b-8772-92cf81b76bf5",
+              "description_product": "Luxury insulated water bottle with leather sleeve",
+              "price": 79.99
+            }
+          ],
+          "reasoning": "Applied rating, review count, and price range filters"
+        }
+      ],
+      "outcomes": {
+        "passed_count": 13,
+        "rejected_count": 17,
+        "final_products": 13
+      },
+      "reasoning": "Filtered 30 candidates down to 13 products",
+      "metadata": {}
+    }
+  ],
+  "total_steps": 3
+}

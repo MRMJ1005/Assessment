@@ -1,0 +1,132 @@
+{
+  "execution_id": "d5152177-6850-4872-849e-53f817e3bc71",
+  "created_at": "2025-12-28T12:26:35.428147",
+  "metadata": {
+    "endpoint": "/related-products",
+    "keywords": "bottle,plastic",
+    "price": 11.0
+  },
+  "steps": [
+    {
+      "step_id": "a81dec9c-0e31-41b1-bb50-e44663193e67",
+      "step_name": "keyword_processing",
+      "timestamp": "2025-12-28T12:26:35.428252",
+      "inputs": {
+        "raw_keywords": "bottle,plastic",
+        "price": 11.0
+      },
+      "candidates": [],
+      "filters_applied": [],
+      "outcomes": {
+        "generated_keywords": [
+          "bottle",
+          "plastic"
+        ],
+        "keyword_count": 2
+      },
+      "reasoning": "Keywords extracted from comma-separated input string",
+      "metadata": {}
+    },
+    {
+      "step_id": "ca6109da-dada-449d-8022-eafb5f15e0f4",
+      "step_name": "product_search",
+      "timestamp": "2025-12-28T12:26:35.428307",
+      "inputs": {
+        "keywords": [
+          "bottle",
+          "plastic"
+        ]
+      },
+      "candidates": [
+        {
+          "id": "bd3d9be6-8c39-4021-bc4d-b39cf6f259bf",
+          "description": "Plastic reusable water bottle 1 liter, lightweight and BPA free",
+          "price": 9.99,
+          "rating": 3.6,
+          "reviews": 213
+        },
+        {
+          "id": "2efb7972-a362-4248-9927-645e7eedbe83",
+          "description": "Reusable plastic water bottle with measurement markings",
+          "price": 8.99,
+          "rating": 3.5,
+          "reviews": 289
+        },
+        {
+          "id": "edfc2146-d776-4400-a43b-a8625e2419f0",
+          "description": "Plastic squeeze water bottle for cycling and sports",
+          "price": 6.99,
+          "rating": 3.3,
+          "reviews": 188
+        }
+      ],
+      "filters_applied": [],
+      "outcomes": {
+        "candidates_found": 3
+      },
+      "reasoning": "Database query returned 3 candidate products",
+      "metadata": {
+        "candidates_description": "Products matching search keywords"
+      }
+    },
+    {
+      "step_id": "d4213d55-e3c9-424a-9b34-2e9ea10a5a1a",
+      "step_name": "filter_and_select",
+      "timestamp": "2025-12-28T12:26:35.499207",
+      "inputs": {
+        "candidate_count": 3,
+        "reference_price": 11.0,
+        "filter_criteria": {
+          "min_rating": 3.5,
+          "min_reviews": 100,
+          "price_range": [
+            8.25,
+            22.0
+          ]
+        }
+      },
+      "candidates": [],
+      "filters_applied": [
+        {
+          "name": "combined_filters",
+          "config": {
+            "min_rating": 3.5,
+            "min_reviews": 100,
+            "price_range": [
+              8.25,
+              22.0
+            ]
+          },
+          "passed_count": 2,
+          "rejected_count": 1,
+          "passed": [
+            {
+              "id": "bd3d9be6-8c39-4021-bc4d-b39cf6f259bf",
+              "price": 9.99,
+              "rating": 3.6
+            },
+            {
+              "id": "2efb7972-a362-4248-9927-645e7eedbe83",
+              "price": 8.99,
+              "rating": 3.5
+            }
+          ],
+          "rejected": [
+            {
+              "id": "edfc2146-d776-4400-a43b-a8625e2419f0"
+            }
+          ],
+          "reasoning": "Applied rating, review count, and price range filters"
+        }
+      ],
+      "outcomes": {
+        "passed_count": 2,
+        "rejected_count": 1,
+        "final_products": 2
+      },
+      "reasoning": "Filtered 3 candidates down to 2 products",
+      "metadata": {}
+    }
+  ],
+  "total_steps": 3
+}
